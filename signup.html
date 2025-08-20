@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styles */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-group input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Google Sign-In Button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  color: #555;
+  padding: 10px;
+  margin-left: 100px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+  
+}
+
+.google-btn:hover {
+  background: #f0f0f0;
+}
+
+.or {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin: 15px 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+          <h1>Sign Up</h1>
+          <form action="#" method="POST">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+          <p class="or">OR</p>
+          <button class="google-btn">
+            <img src="img/google.jpg" alt="Google Icon">
+            <a href="google.html">Sign in with Google</a>
+          </button>
+        </div>
+      </div>
+</body>
+</html>

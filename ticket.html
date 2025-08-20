@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Management System</title>
+<link rel="stylesheet" type="text/css" href="ticket.css">
+</head>
+<body>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="login.html">
+      </head>
+      <body id="page-top" data-spy="scroll" data-target=".side-menu">
+        <nav class="side-menu">
+          <ul>
+            <li class="hidden active">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a href="index.html" class="page-scroll">
+                <span class="menu-title">Home</span>
+                <span class="dot"></span>
+              </a>
+            </li>
+            <li>
+              <!-- <a href="#speakers" class="page-scroll">
+                <span class="menu-title">Speakers</span>
+                <span class="dot"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#tickets" class="page-scroll">
+                <span class="menu-title">Buy Tickets</span>
+                <span class="dot"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#schedule" class="page-scroll">
+                <span class="menu-title">Schedule</span>
+                <span class="dot"></span>
+              </a>
+            </li>
+            <li> -->
+              <a href="login.html" class="page-scroll">
+                <span class="menu-title">Login</span>
+                <span class="dot"></span>
+              </a>
+            </li>
+          
+          </ul>
+        </nav>
+  
+        
+        
+  
+
+
+<div class="background-img">
+<div class="ticket-section">
+    <form id="ticket-form">
+        <h2>Ticket Management System</h2>
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="text" id="seat" placeholder="Seat No" required><br>
+        <input type="date" id="date" required><br>
+        <input type="text" id="from" placeholder="From Location" required><br>
+        <input type="text" id="to" placeholder="To Location" required><br>
+        <input type="submit" value="Book Ticket">
+    </form>
+    <button id="view-history-btn">View History</button>
+</div>
+</div>
+<div id="ticket-history" style="display: none;">
+    <h3>Ticket History</h3>
+    <table id="history-table">
+        <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Name</th>
+                <th>Seat No</th>
+                <th>Date</th>
+                <th>From Location</th>
+                <th>To Location</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+            <!-- Ticket history rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="ticket.js"></script>
+
+</body>
+</html>
